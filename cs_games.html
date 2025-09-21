@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>billiards ahh site</title>
+        <style>
+            .header img {
+                align-items: center;
+                display: flex;
+                height: 190px;
+                translate: 20px;
+                transform: translateY(25px);
+            }
+            .header{
+            animation: fallDown 0.8s ease-out backwards;
+            }
+            @keyframes fallDown {
+            0% { transform: translateY(-100vh); }
+            100% { transform: translateY(0); }
+            }
+            body {
+                background-color: rgb(252, 233, 205);
+                transform: translateY(-5px);
+            }
+            .line img{
+                height: 57px;                       
+                width: 60%;
+                margin-top: -25px;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                animation: stroke2 2s ease-out forwards;
+            }
+            @keyframes stroke2 {
+                25% {translate: 80px}
+                50% { translate: -35px;}
+                75% {translate: 80px}
+                100% {translate: 0px}
+            }
+            .pages {
+                position: absolute;
+                display: flex;
+                text-align: center;
+                margin-left: 35%;
+                translate: -70px;
+                top: 60px;
+                gap: 80px;
+            }
+            .pages a{
+                text-align: center;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                border-radius: 50%;
+                border: 3px white;
+                border-style: solid;
+                text-decoration: none;
+                color: white;
+                height: 80px;
+                width: 80px;
+                font-family: 'Bungee', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+                transform: scale(1.215);
+            }
+            .home { 
+                background: #FFD633;
+                font-size: 16px;
+            }
+            .about{ 
+                background: #1E90FF;
+                font-size: 16px;
+            }
+            .needs { 
+                background: #FF3333;
+                font-size: 14px;
+            }
+            .game { 
+                background: #9933FF;
+                font-size: 16px;
+            }
+            .refs { 
+                background: #33CC33;
+                font-size: 12px;
+            }
+            .pages a:hover{
+                transform: scale(1);
+            }
+            .games{
+                font-size: 28px;
+                font-family: 'expletus sans', montserrat, 'allerta stencil', 'DM Mono', 'nunito sans';
+                text-align: center;
+            }
+            .games h1{
+                color: #064420;
+            }
+            .games p{
+                font-size: smaller;
+                transform: translateY(-40px);
+                font-family: montserrat, 'allerta stencil', 'nunito sans', 'DM Mono','expletus sans';
+            }
+            .start {
+                margin-left: 23%;
+                font-family: 'expletus sans', montserrat, 'allerta stencil', 'DM Mono', 'nunito sans';
+                max-width: 60%;
+            }
+            .start img{
+                border: 4px solid #4B2E2E;
+                border-radius: 10px;
+                height: 250px;
+                width: 450px;
+                align-items: center;
+            }
+            .start h1{
+                font-size: 35px;
+                display: flex;
+            }
+            .start li{
+                margin-left:30px;
+                transform: translateY(-15px);
+                font-size: 25px;
+            }
+            .start h3{
+                padding-bottom: 80px
+            }
+            .start p{
+                translate: -50px;
+                transform: translateY(-20px);
+                font-size: 20px;
+            }
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Bungee&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Expletus+Sans:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+            <img src="https://i.imgur.com/x0NhExJ.jpeg" alt="billiards">
+        
+        <div class="line">
+                <img src="https://i.imgur.com/4H27Qbc.jpeg" alt="cue_stick">
+        </div>
+        <div class="pages">
+            <a href="cs.html" class="home">Home</a>
+            <a href="cs2_about.html" class="about">About<br>Me</a>
+            <a href="cs_basics.html" class="needs">Basics</a>
+            <a href="cs_games.html" class="game">Games</a>
+            <a href="references.html" class="refs">Resources</a>
+        </div>
+        </div>
+        <div class="games">
+            <h1>GAMES</h1>
+            <p>-- Different Billiard Games --</p>
+        </div>
+        <div class="start">
+            <h1>Pool Games</h1>
+        <ul>
+            <li><strong>8-Ball</strong></li>
+        </ul>    
+            <img src="https://media.istockphoto.com/id/174474258/photo/billiard-pool-numbered-balls-arranged-in-a-triangle-shape.jpg?s=612x612&w=0&k=20&c=JGcqB5vmUpvvK5kV7r0hREHoy8WHX48LboFpoM75Zbs=" alt="8-ball">
+            <h3>Generally the most popular. 15 object balls + cue ball. The goal is to sink your group (solids or stripes) then lastly the 8-ball.</h3>
+        <ul>    
+            <li><strong>9-Ball</strong></li>
+        </ul>    
+            <img src="data:image/jpeg;base64,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" alt="9-ball">
+            <h3>Unlike 8-ball, this is only played with balls 1 to 9. You must always hit the lowest-numbered ball first. You can win by pocketing the 9.</h3>
+        <ul>   
+            <li><strong>10-Ball</strong></li>
+        </ul>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Ten-ball_rack.jpg" alt="10-ball">
+            <h3>10-ball is 5 balls shorter than 8-ball. It is similar to 9-ball, but uses balls 1 to 10. It is considered more challenging.</h3>
+            <h1>Snooker</h1>
+        <img src="data:image/jpeg;base64,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" alt="snooker">
+        <h3>Snooker is played on a larger 12' by 6' table with 21 balls. Players score by potting the red balls worth 1 point while the colored balls are worth 2-7 points. It is said to be the most strategic game of pool.</h3>
+            <h1>Carom Billiards</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Hearst_Castle_Casa_Grande_interior_September_2012_006.jpg" alt="carom">
+        <h3>Carom Billiards is a unique game of billiard. It is played on a pocketless 10' by 5' table with 3 balls. The goal is to hit both object balls with the cue ball in one shot. </h3>
+        </div>
+    </body>
+</html>

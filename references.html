@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>billiards ahh site</title>
+        <style>
+            .header img {
+                align-items: center;
+                display: flex;
+                height: 190px;
+                translate: 20px;
+                transform: translateY(25px);
+            }
+            .header{
+            animation: fallDown 0.8s ease-out backwards;
+            }
+            @keyframes fallDown {
+            0% { transform: translateY(-100vh); }
+            100% { transform: translateY(0); }
+            }
+            body {
+                background-color: rgb(252, 233, 205);
+                transform: translateY(-5px);
+            }
+            .line img{
+                height: 57px;                       
+                width: 60%;
+                margin-top: -25px;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                animation: stroke2 2s ease-out forwards;
+            }
+            @keyframes stroke2 {
+                25% {translate: 80px}
+                50% { translate: -35px;}
+                75% {translate: 80px}
+                100% {translate: 0px}
+            }
+            .pages {
+                position: absolute;
+                display: flex;
+                text-align: center;
+                margin-left: 35%;
+                translate: -70px;
+                top: 60px;
+                gap: 80px;
+            }
+            .pages a{
+                text-align: center;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                border-radius: 50%;
+                border: 3px white;
+                border-style: solid;
+                text-decoration: none;
+                color: white;
+                height: 80px;
+                width: 80px;
+                font-family: 'Bungee', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+                transform: scale(1.215);
+            }
+            .home { 
+                background: #FFD633;
+                font-size: 16px;
+            }
+            .about{ 
+                background: #1E90FF;
+                font-size: 16px;
+            }
+            .needs { 
+                background: #FF3333;
+                font-size: 14px;
+            }
+            .game { 
+                background: #9933FF;
+                font-size: 16px;
+            }
+            .refs { 
+                background: #33CC33;
+                font-size: 12px;
+            }
+            .pages a:hover{
+                transform: scale(1);
+            }
+            .resources{
+                font-size: 28px;
+                font-family: 'expletus sans', montserrat, 'allerta stencil', 'DM Mono', 'nunito sans';
+                text-align: center;
+            }
+            .resources h1{
+                color: #064420;
+            }
+            .resources p{
+                font-size: smaller;
+                transform: translateY(-40px);
+                font-family: montserrat, 'allerta stencil', 'nunito sans', 'DM Mono','expletus sans';
+                padding-bottom: 60px;
+            }
+            .start {
+                margin-left: 23%;
+                font-family: 'expletus sans', montserrat, 'allerta stencil', 'DM Mono', 'nunito sans';
+                max-width: 60%;
+                display:block;
+            }
+            .start img{
+                border: 4px solid #4B2E2E;
+                border-radius: 10px;
+                height: 250px;
+                width: 450px;
+                align-items: center;
+            }
+            .start h1{
+                font-size: 35px;
+                display: flex;
+            }
+            .start a{
+                text-decoration-line: none;
+            }
+            .start li{
+                margin-left:30px;
+                transform: translateY(-15px);
+                font-size: 25px;
+            }
+            .start h3{
+                padding-bottom: 4px;
+                transform: translateY(-20px);
+            }
+            .start h2{
+                width: fit-content;
+                border-radius: 10px;
+                padding: 10px;
+            }
+            .start p{
+                translate: -50px;
+                transform: translateY(-20px);
+                font-size: 20px;
+            }
+            .start iframe{
+                width: 640px;
+                height: 360px;
+                 box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            }
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Bungee&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Expletus+Sans:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+            <img src="https://i.imgur.com/x0NhExJ.jpeg" alt="billiards">
+        
+        <div class="line">
+                <img src="https://i.imgur.com/4H27Qbc.jpeg" alt="cue_stick">
+        </div>
+        <div class="pages">
+            <a href="cs.html" class="home">Home</a>
+            <a href="cs2_about.html" class="about">About<br>Me</a>
+            <a href="cs_basics.html" class="needs">Basics</a>
+            <a href="cs_games.html" class="game">Games</a>
+            <a href="references.html" class="refs">Resources</a>
+        </div>
+        </div>
+        <div class="resources">
+            <h1>RESOURCES</h1>
+            <p>--- References for You ---</p>
+            </div>
+        <div class="start">
+            <h1>Tutorial Video:</h1>
+            <iframe src="https://www.youtube.com/embed/DZEP-7mRVsA" title="Learn to Play Pool in 3 Minutes | Pool Lesson"></iframe>
+            <h3>Video Tutorial by <a href="https://www.youtube.com/@WorldofPoolandBilliards">WPB</a> on Youtube</h3>
+            <h2><a href="https://www.pooldawg.com/article/10-things-you-must-have-in-your-case/?srsltid=AfmBOopT7CUnj-5j8DlFQCzYjd47YER_eD9bb3Cx17DltEb02HbPS-Xz">--- Reference Used for the Basics ---</a></h2>
+        </div>
+    </body>
+</html>
